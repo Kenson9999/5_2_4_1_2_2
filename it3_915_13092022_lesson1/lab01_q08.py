@@ -1,0 +1,2 @@
+a="In Python, sequence of characters is included inside 'single quotes' or "double quotes". As far as language syntax is concerned, there's no difference in 'single quoted' or "double quoted" string. Both representations can be used interchangeably. However, if either 'single quote' or "double quote" is a part of the string itself, then the string must be placed in "double quotes" or 'single quotes' respectively."
+print(a)

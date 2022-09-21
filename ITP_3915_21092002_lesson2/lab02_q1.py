@@ -1,0 +1,8 @@
+class_a = input ("Input first integer (Dividend):  ")
+class_b = input ("Input second integer (Divisor):  ")
+print("Dividend",int(class_a))
+print("Divisor",int(class_b))
+print("Sum: ",int(class_a)+int(class_b))
+print("Average: ",(int(class_a)+int(class_b))/2)
+print("Quotient: ",int(int(class_a)/int(class_b)))
+print("Remainder:  ",int(class_a)%int(class_b))

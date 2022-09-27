@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hotel Rating Form</title>
+    <style type="text/css">
+      fieldset { border-radius: 10px; }
+    </style>
+  </head>
+
+  <body>
+    <h2>Hotel Rating Form</h2>
+    <form methon="post" enctype="multipart/form-data" action="read_data.php" name="register_form">
+      <input name="region" type="hidden" value="asis"/>
+      <fieldset>
+	<legend>Hotel Details</legend>
+        Hotel Name :
+        <input type="text" name="hotelname" /><br />
+        Phone No :
+        <input name="phoneno" maxlength="8" /><br />
+        Booking By :
+        <input type="radio" name="booking" value="I" checked="checked"/>
+        Internet
+        <input type="radio" name="booking" value="A" />
+        Agency <br />
+        Room Selected :
+        <select name="room">
+       		<option value="D">Double</option>
+		<option value="T">Twin</option>
+		<option value="S" selected="selected">Single</option>
+        </select>
+        <br />
+        Stay Period :  from
+        <input type="date"/>&nbsp;&nbsp;&nbsp; to
+        <input type="date"/><br />
+        Facilities :
+        <input name="F1" type="checkbox" value="G" checked="checked"/>Gym
+        <input name="F2" type="checkbox" value="S"/>Swimming Pool
+        <input name="F3" type="checkbox" value="B"/>Business Centre
+      </fieldset>
+      <fieldset>
+        <legend>Your experience in the hotel:</legend>
+        <textarea name="comment" cols="50" rows="4">In less 200 words...</textarea><br />
+        Send us any photo :
+        <input type="file" name="photo" /><br />
+        Rating :
+        <input type="number" min="1" max="5" /> stars (Min 1, Max 5)
+      </fieldset>
+      Choose a colour
+      <input type="color">
+      for the tee as your gift after you send this form.<br />
+      <input type="submit" value="Send Data"/>
+	  
+      <input type="reset" value="Clear Data"/>
+    </form>
+  </body>
+</html>

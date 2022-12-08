@@ -29,9 +29,9 @@ def display_coffee_shop_menu():
 def compute_sales(coffee_no, quantity, large_cup, cold):
     coffee_price = COFFEE_NAME_AND_PRICES[coffee_no][INDEX_COFFEE_PRICE]*quantity
     if (large_cup=="Y")|(large_cup=="y"):
-        coffee_price+=5
+        coffee_price+=5*quantity
     if (cold=="Y")|(cold=="y"):
-        coffee_price+=3
+        coffee_price+=3*quantity
     #print(coffee_price)
     return coffee_price
 
@@ -107,7 +107,7 @@ def main():
                 current_sales_COLD=i[INDEX_COLD]
                 this_coffee_cost=current_sales_COFFEE_PRICES
                 if (current_sales_LARGE_CUP =="Y")|(current_sales_LARGE_CUP =="y")|(current_sales_COLD =="Y")|(current_sales_COLD =="y"):
-                    this_coffee_option ="with option "
+                    this_coffee_option =" with option "
                     if ((current_sales_COLD =="N")|(current_sales_COLD =="n"))&((current_sales_LARGE_CUP =="Y")|(current_sales_LARGE_CUP =="y")):
                         this_coffee_option+="LARGE CUP"
                         this_coffee_cost+=5*i[INDEX_QUANTITY]
